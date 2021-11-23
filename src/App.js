@@ -7,9 +7,9 @@ function App() {
     <>
       <ColorPicker height="100px"/>
       <br/>
-      <ColorPicker shape="circle" height="100px"/>
+      <ColorPicker shape="circle" height="100" defaultColor="#4A412A"/>
       <br/>
-      <ColorPicker height="80" width="60" shape="hexagon"/>
+      <ColorPicker height="80" width="60" shape="hexagon" defaultColor="#4A412A"/>
     </>
   );
 }

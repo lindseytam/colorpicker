@@ -10,24 +10,24 @@ const CircleInput = styled.input.attrs({
     overflow: hidden;
     background: ${props => props.theme.color};
     color: ${props => props.theme.color};
-    height: ${props => props.theme.diameter}px;
-    width: ${props => props.theme.diameter}px;
+    height: ${props => props.theme.height}px;
+    width: ${props => props.theme.height}px;
 `
 
 CircleInput.defaultProps = {
   theme: {
     color: "#000000",
-    diameter: 100
+    height: 100
   }
 }
 
-const Circle = ({diameter, defaultColor, onChange}) => {
+const Circle = ({height, defaultColor, onChange}) => {
 
   const [color, setColor] = useState(defaultColor)
 
   const theme = {
     color: color,
-    diameter: diameter
+    height: height
   }
 
   return (
