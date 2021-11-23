@@ -6,10 +6,10 @@ const HexagonInput = styled.input.attrs({
   type: 'color',
 })`
     height: ${props => props.theme.height}px;
-    width: ${props => props.theme.width}px;
+    width: ${props => 2/3 * props.theme.height}px;
     background: ${props => props.theme.color};
     position: relative;
-    left: 25px;
+    left: ${props => 0.25 * props.theme.height}px;
     box-sizing: border-box;
   
   &:before, &:after {
@@ -34,18 +34,16 @@ const HexagonInput = styled.input.attrs({
 HexagonInput.defaultProps = {
   theme: {
     color: "#000000",
-    height: 80,
-    width: 60
+    height: 80
   }
 }
 
-const Hexagon = ({height, width, defaultColor, onChange}) => {
+const Hexagon = ({height, defaultColor, onChange}) => {
 
   const [color, setColor] = useState(defaultColor) // handles center of hexagon (square)
   const [theme, setTheme] = useState({ // handles sides of hexagon (triangles)
     color: defaultColor,
-    height: height,
-    width: width
+    height: height
   })
 
   // Update color when user selects a different input

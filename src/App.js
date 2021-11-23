@@ -9,7 +9,7 @@ function App() {
       <br/>
       <ColorPicker shape="circle" height="100" defaultColor="#4A412A"/>
       <br/>
-      <ColorPicker height="80" width="60" shape="hexagon" defaultColor="#4A412A"/>
+      <ColorPicker height="120" shape="hexagon" defaultColor="#4A412A"/>
     </>
   );
 }
