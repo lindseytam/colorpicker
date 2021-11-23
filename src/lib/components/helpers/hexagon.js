@@ -4,7 +4,6 @@ import styled, { ThemeProvider } from "styled-components";
 
 const HexagonInput = styled.input.attrs({ 
   type: 'color',
-  placeholder: `${props => props.theme.color}`
 })`
     height: ${props => props.theme.height}px;
     width: ${props => props.theme.width}px;
@@ -19,22 +18,22 @@ const HexagonInput = styled.input.attrs({
     height: 0;
     width:  0;
     top:  0;
-    border-top: 40px solid transparent; //40
-    border-bottom: 40px solid transparent; //40
+    border-top: ${props => 0.5 * props.theme.height}px solid transparent; 
+    border-bottom: ${props => 0.5 * props.theme.height}px solid transparent; 
   }
   &:before {
-    left: -20px;
-    border-right: 20px solid ${props => props.theme.color};
+    left: -${props => 0.25 * props.theme.height}px;
+    border-right: ${props => 0.25 * props.theme.height}px solid ${props => props.theme.color};
   }
   &:after {
-    right: -20px;
-    border-left: 20px solid ${props => props.theme.color};
+    right: -${props => 0.25 * props.theme.height}px;
+    border-left: ${props => 0.25 * props.theme.height}px solid ${props => props.theme.color};
   }         
 `
 
 HexagonInput.defaultProps = {
   theme: {
-    color: "black",
+    color: "#000000",
     height: 80,
     width: 60
   }
@@ -42,21 +41,27 @@ HexagonInput.defaultProps = {
 
 const Hexagon = ({height, width, defaultColor, onChange}) => {
 
-  const [color, setColor] = useState((defaultColor) ? "black" : defaultColor)
-
-  const theme = {
-    color: color,
+  const [color, setColor] = useState(defaultColor) // handles center of hexagon (square)
+  const [theme, setTheme] = useState({ // handles sides of hexagon (triangles)
+    color: defaultColor,
     height: height,
     width: width
+  })
+
+  // Update color when user selects a different input
+  const handleChange = (e) => {
+    setColor(e.target.value)
+    const updatedTheme = {...theme, color: e.target.value}
+    setTheme(updatedTheme)
   }
 
   return (
     <>
     <ThemeProvider theme={theme}>
       <HexagonInput 
-        onInput={(e) => {
-          setColor(e.target.value)
-          }
+        value={color}
+        onInput={
+          handleChange
         }
       />
       </ThemeProvider>
