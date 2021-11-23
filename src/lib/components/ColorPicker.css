@@ -5,10 +5,3 @@ input[type=color], input[type=color]::-webkit-color-swatch, input[type=color]::-
     -webkit-appearance: none;
     cursor: pointer;
 }
-
-
-.circle {
-    border: 0;
-    border-radius: 50% !important;
-    overflow: hidden;
-}
