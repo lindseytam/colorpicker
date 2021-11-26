@@ -34,7 +34,7 @@ const HexagonInput = styled.input.attrs({
 HexagonInput.defaultProps = {
   theme: {
     color: "#000000",
-    height: 80
+    height: 100
   }
 }
 
