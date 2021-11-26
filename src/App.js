@@ -5,11 +5,12 @@ function App() {
   
   return (
     <>
-      <ColorPicker height="100px"/>
+      <h1>Shapely Color Picker</h1>
+      <ColorPicker height="100px" defaultColor="#14E298"/>
       <br/>
-      <ColorPicker shape="circle" height="100" defaultColor="#4A412A"/>
+      <ColorPicker shape="circle" height="100" defaultColor="#14E298"/>
       <br/>
-      <ColorPicker height="120" shape="hexagon" defaultColor="#4A412A"/>
+      <ColorPicker height="120" shape="hexagon" defaultColor="#14E298"/>
     </>
   );
 }
