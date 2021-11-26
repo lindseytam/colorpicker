@@ -34,6 +34,7 @@ const Circle = ({height, defaultColor, onChange}) => {
     <>
     <ThemeProvider theme={theme}>
       <CircleInput 
+        data-testid="circle"
         value={color}
         onInput={(e) => {
           setColor(e.target.value)
