@@ -9,7 +9,7 @@ const HexagonInput = styled.input.attrs({
     width: ${props => 2/3 * props.theme.height}px;
     background: ${props => props.theme.color};
     position: relative;
-    left: ${props => 0.25 * props.theme.height}px;
+    // left: ${props => 0.25 * props.theme.height}px;
     box-sizing: border-box;
   
   &:before, &:after {
