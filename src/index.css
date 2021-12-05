@@ -26,6 +26,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
@@ -33,7 +34,38 @@ code {
     monospace;
 }
 
-h1 {
+h1, h2, h3 {
   color: #A7B7C5;
-  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+p {
+  color: white;
+  text-align: left;
+}
+
+pre {
+  display: block;
+  overflow: auto;
+  overflow-x: auto;
+  font-family: "Courier New";
+  padding: 0.5em;
+  overflow-wrap: break-word;
+}
+
+pre code {
+  word-break: break-all;
+}
+
+i {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sample-code > input {
+  display: none;
 }
