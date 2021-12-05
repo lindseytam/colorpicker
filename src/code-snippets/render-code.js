@@ -30,7 +30,7 @@ const Code = ({shape, color, height}) => {
     navigator.clipboard.writeText(copyText.value)
 
     /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);   
+    alert("Copied!");   
 }
 
 // helper function to renderCodeBlock
@@ -45,12 +45,16 @@ const codeBlockHelper = (code) => {
 
 // Renders code section
 const renderCodeBlock = (elem) => {
+    var code = ""
+    for (let i = 0; i < elem.codes.length; i++) {
+        code +=  elem.codes[i] + "\n"
+    }
     return (
         <>
             <h2>{elem.section}</h2>
             <div className='sample-code'>
-                <input id={`${elem.id}-value`} value={elem.code}/>
-                <i id={elem.id} onClick={copy} class="far fa-clipboard"/>
+                <input id={`${elem.id}-value`} value={code}/>
+                <i id={elem.id} onClick={copy} className="far fa-clipboard"/>
                 {elem.codes.map((elem) => codeBlockHelper(elem))}
             </div>
         </>

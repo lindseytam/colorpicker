@@ -4,7 +4,7 @@ return `
     shape=${shape} 
     defaultColor=${color} 
     height=${height} 
-    onChange={handleChange}/>
+    onChange={handleChange}
 />
 `
 }
