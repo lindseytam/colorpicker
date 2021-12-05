@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Square = ({height, defaultColor, onChange}) => {
 
@@ -14,6 +14,10 @@ const Square = ({height, defaultColor, onChange}) => {
     const updatedTheme = {...theme, color: e.target.value}
     setTheme(updatedTheme)
   }
+
+  useEffect(() => {
+    onChange(color)
+  }, [color])
 
   return (
     <input 

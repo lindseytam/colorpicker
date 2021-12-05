@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled, { ThemeProvider } from "styled-components";
 
 
@@ -30,16 +30,22 @@ const Circle = ({height, defaultColor, onChange}) => {
     height: height
   }
 
+  // handle event where user changes image
+  const handleChange = (e) => {
+    setColor(e.target.value)
+  }
+
+  useEffect(() => {
+    onChange(color)
+  }, [color])
+
   return (
     <>
     <ThemeProvider theme={theme}>
       <CircleInput 
         data-testid="circle"
         value={color}
-        onInput={(e) => {
-          setColor(e.target.value)
-          }
-        }
+        onInput={handleChange}
       />
       </ThemeProvider>
     </>

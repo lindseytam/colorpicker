@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled, { ThemeProvider } from "styled-components";
 
 
@@ -53,14 +53,16 @@ const Hexagon = ({height, defaultColor, onChange}) => {
     setTheme(updatedTheme)
   }
 
+  useEffect(() => {
+    onChange(color)
+  }, [color])
+
   return (
     <>
     <ThemeProvider theme={theme}>
       <HexagonInput 
         value={color}
-        onInput={
-          handleChange
-        }
+        onInput={handleChange}
       />
       </ThemeProvider>
     </>
