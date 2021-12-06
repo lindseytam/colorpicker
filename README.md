@@ -9,7 +9,7 @@ This package makes it easy for users to set the shape, default color, and height
 
 ## Shapes
 
-So far, users can choose between 3 different shapes: a circle, a square, and a hexagon. 
+Users can choose between 3 different shapes: a circle, a square, and a hexagon. 
 
 ## Height
 
