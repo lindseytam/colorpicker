@@ -2,7 +2,7 @@
 
 This package makes it easy for users to set the shape, default color, and height of a color picker application for their react app. This colorpicker is designed to handle changes immediately. You can check out a live demo [here](http://lindseytam.com/colorpicker/).
 
-INSERT GIF HERE
+![](https://github.com/lindseytam/colorpicker/blob/main/images/demo.gif)
 
 
 # 🎨 Customization Options
