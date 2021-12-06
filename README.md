@@ -1,6 +1,6 @@
 # Shapely Color Picker 
 
-This package makes it easy for users to set the shape, default color, and height of a color picker application for their react app. This colorpicker is designed to handle changes immediately. You can check out a live demo here.
+This package makes it easy for users to set the shape, default color, and height of a color picker application for their react app. This colorpicker is designed to handle changes immediately. You can check out a live demo [here](http://lindseytam.com/colorpicker/).
 
 INSERT GIF HERE
 
@@ -59,5 +59,15 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+### `npm run pre-deploy`
+
+Build files to prepare for deployment
+
+### `npm run deploy`
+
+Deploy sample to Github pages
+
+
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
