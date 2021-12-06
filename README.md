@@ -1,6 +1,37 @@
-# Getting Started with Create React App
+# Shapely Color Picker 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This package makes it easy for users to set the shape, default color, and height of a color picker application for their react app. This colorpicker is designed to handle changes immediately. You can check out a live demo here.
+
+INSERT GIF HERE
+
+
+# 🎨 Customization Options
+
+## Shapes
+
+So far, users can choose between 3 different shapes: a circle, a square, and a hexagon. 
+
+## Height
+
+Height is calcualated in px and is inserted as an integer. At the moment, you can specify height but not width. Therefore, you cannot make the circle and oval nor can you make the square a rectangle.
+
+## Default Color
+
+You may specify the default color to set your colorpicker to. This value must be a hex. Non-hex values or string like 'red' will render the default value to be black.
+
+# 🛠️ Installation & Usage
+
+This package is available on npm and can be installed with the following command:
+
+`npm i shapely-colorpicker`
+
+After installation, you can add it to your app with one of the following:
+
+`var Colorpicker = require('shapely-colorpicker');`
+
+`import Colorpicker from 'shapely-colorpicker';`
+
+# ⚙️ Development 
 
 ## Available Scripts
 
@@ -30,43 +61,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
