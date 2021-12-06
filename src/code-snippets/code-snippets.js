@@ -1,16 +1,21 @@
 const colorpickerCode = (shape, color, height) => { 
-return `
+return `import ColorPicker from 'shapely-colorpicker';
+
+const [color, setColor] = useState("${color}")
+
+const handleChange = (change) => {
+    setColor(change)
+}
+
 <ColorPicker  
-    shape=${shape} 
-    defaultColor=${color} 
-    height=${height} 
+    shape="${shape}" 
+    defaultColor="${color}" 
+    height={${height}}
     onChange={handleChange}
 />
 `
 }
-
-const importCode = `import colorpicker from 'shapely-colorpicker';`
-const installCode = `$ npm install shapely-colorpicker`
+const installCode = `npm install shapely-colorpicker`
 
 
-export {colorpickerCode, importCode, installCode};
+export {colorpickerCode, installCode};

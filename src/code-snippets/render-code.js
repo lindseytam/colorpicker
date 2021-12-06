@@ -1,5 +1,5 @@
 import React from 'react';
-import { colorpickerCode, importCode, installCode } from './code-snippets'
+import { colorpickerCode, installCode } from './code-snippets'
 
 const Code = ({shape, color, height}) => {
 
@@ -7,7 +7,7 @@ const Code = ({shape, color, height}) => {
         {
             section: "Snippet",
             id: "snippet",  
-            codes: [importCode, colorpickerCode(shape, color, height)]
+            codes: [colorpickerCode(shape, color, height)]
         },
         {
             section: "Installation",
