@@ -61,6 +61,7 @@ const Hexagon = ({height, defaultColor, onChange}) => {
     <>
     <ThemeProvider theme={theme}>
       <HexagonInput 
+        data-testid="hexagon"
         value={color}
         onInput={handleChange}
       />

@@ -21,6 +21,7 @@ const Square = ({height, defaultColor, onChange}) => {
 
   return (
     <input 
+        data-testid="square"
         value={color} 
         type="color" 
         style={{'height': height, 'width': height}}
