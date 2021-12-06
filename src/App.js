@@ -21,6 +21,7 @@ function App() {
   const renderButton = (elem) => {
     return (
       <button
+        key={elem}
         id={elem}
         onClick={() => {
           setShape(elem)

@@ -35,9 +35,9 @@ const Code = ({shape, color, height}) => {
 
 // helper function to renderCodeBlock
 // renders a block of code
-const codeBlockHelper = (code) => {
+const codeBlockHelper = (i, code) => {
     return (
-        <pre>
+        <pre key={i}>
             <code>{code}</code>
         </pre>
     )
@@ -50,14 +50,14 @@ const renderCodeBlock = (elem) => {
         code +=  elem.codes[i] + "\n"
     }
     return (
-        <>
+        <div key={elem.section}>
             <h2>{elem.section}</h2>
             <div className='sample-code'>
                 <input id={`${elem.id}-value`} value={code}/>
                 <i id={elem.id} onClick={copy} className="far fa-clipboard"/>
-                {elem.codes.map((elem) => codeBlockHelper(elem))}
+                {elem.codes.map((code, i) => codeBlockHelper(i, code))}
             </div>
-        </>
+        </div>
       )
   }
   
