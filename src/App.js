@@ -54,7 +54,9 @@ function App() {
       {/* Formats abouts section */}
       <div className='about-container'>
         <h2>About</h2>
-        <p className='about-text'>About section</p>
+        <p className='about-text'>
+          This package makes it easy for users to set the shape, default color, and height of a color picker application for their react app. This colorpicker is designed to handle changes immediately.
+        </p>
       </div>
     </div>
   );
