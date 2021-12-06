@@ -21,7 +21,7 @@ You may specify the default color to set your colorpicker to. This value must be
 
 # 🛠️ Installation & Usage
 
-This package is available on npm and can be installed with the following command:
+This package is available on [npm](https://www.npmjs.com/package/shapely-colorpicker) and can be installed with the following command:
 
 `npm i shapely-colorpicker`
 
