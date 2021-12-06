@@ -23,13 +23,35 @@ You may specify the default color to set your colorpicker to. This value must be
 
 This package is available on [npm](https://www.npmjs.com/package/shapely-colorpicker) and can be installed with the following command:
 
-`npm i shapely-colorpicker`
+```
+npm i shapely-colorpicker
+```
 
 After installation, you can add it to your app with one of the following:
 
-`var Colorpicker = require('shapely-colorpicker');`
+```
+var Colorpicker = require('shapely-colorpicker');
+```
 
-`import Colorpicker from 'shapely-colorpicker';`
+```
+import Colorpicker from 'shapely-colorpicker';
+```
+
+Finally, you can use the starting code below to start using this package:
+```
+const [color, setColor] = useState("#000000")
+
+const handleChange = (change) => {
+    setColor(change)
+}
+
+<ColorPicker  
+    shape="circle" 
+    defaultColor="#000000" 
+    height={200}
+    onChange={handleChange}
+/>
+```
 
 # ⚙️ Development 
 
