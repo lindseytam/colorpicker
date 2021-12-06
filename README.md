@@ -1,6 +1,6 @@
 # Shapely Color Picker 
 
-This package makes it easy for users to set the shape, default color, and height of a color picker application for their react app. This colorpicker is designed to handle changes immediately. You can check out a live demo [here](http://lindseytam.com/colorpicker/).
+This package makes it easy to set the shape, color, and height of a color picker application for your React app. This colorpicker is designed to handle changes immediately. You can check out a live demo [here](http://lindseytam.com/colorpicker/).
 
 ![](https://github.com/lindseytam/colorpicker/blob/main/images/demo.gif)
 
