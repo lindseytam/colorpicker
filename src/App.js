@@ -23,6 +23,7 @@ function App() {
       <button
         key={elem}
         id={elem}
+        data-testid={`${elem}-button`}
         onClick={() => {
           setShape(elem)
         }}
