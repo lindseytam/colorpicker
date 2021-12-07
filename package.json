@@ -1,6 +1,6 @@
 {
   "name": "shapely-colorpicker",
-  "version": "0.1.9",
+  "version": "0.2.3",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -8,7 +8,22 @@
     "dist",
     "README.md"
   ],
-  "homepage": "./",
+  "license": "MIT",
+  "description": "A colorpicker React component that comes in different shapes",
+  "keywords": [
+    "shapely colorpicker",
+    "react colorpicker",
+    "colorpicker",
+    "colorpicker shapes",
+    "hexagon colorpicker",
+    "square colorpicker",
+    "circle colorpicker"
+  ],
+  "homepage": "https://lindseytam.com/colorpicker/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lindseytam/colorpicker"
+  },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@fortawesome/fontawesome-free": "^5.15.4",
